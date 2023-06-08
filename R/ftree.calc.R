@@ -1,5 +1,5 @@
 # ftree.calc.R
-# copyright 2015-2016, openreliability.org
+# copyright 2015-2022, openreliability.org
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -104,7 +104,7 @@ for(row in dim(sDF)[1]:1)  {
 		if(Cond1==0)  {			
 ## re-order the siblingDF rows making sure new row names apply					
 			siblingDF<-siblingDF[c(2,1),]		
-			row.names(siblingsDF)<-c(1,2)		
+			row.names(siblingDF)<-c(1,2)		
 		}			
 ## first feed must have probability of failure for remaining combination gates					
 		if(siblingDF$PBF[1]<=0)  {			
